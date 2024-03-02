@@ -17,7 +17,7 @@ import OtherInputs from "./Compontent/OtherInputs";
 import MultipleCheck from "./Compontent/MultipleCheck";
 import HookuseRef from "./Compontent/HookuseRef";
 import HookuseRef2 from "./Compontent/HookuseRef2";
-import { Route , Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Compontent/Home";
 import About from "./Compontent/About";
 import Contact from "./Compontent/Contact";
@@ -26,21 +26,22 @@ import PageNotFound from "./Compontent/PageNotFound";
 import Products from "./Compontent/Products";
 import Shirts from "./Compontent/Shirts";
 import Jeans from "./Compontent/Jeans";
+import User from "./Compontent/User";
+import UserDetail from "./Compontent/UserDetail";
+import Admin from "./Compontent/Admin";
+import Search from "./Compontent/Search";
 
-export const NameContext = createContext();
-export const ChannelContext = createContext();
+// export const NameContext = createContext();
+// export const ChannelContext = createContext();
 
 function App() {
-
-const navigate =   useNavigate();
-
+  const navigate = useNavigate();
 
   // const name = "Saddique";
   // const age = 22;
 
   return (
     <>
-  
       {/* { name == "Qadoos" ? <Conditional1/> : <Conditional2/> }
   {
     age > 18 ? <h1>You can vote</h1> : <h1>You can not vote</h1>
@@ -64,33 +65,32 @@ const navigate =   useNavigate();
       {/* <HookuseRef /> */}
       {/* <HookuseRef2 /> */}
 
-
-
       {/*  routing */}
 
+      {/* <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />}>
+          <Route path="shirts" element={<Shirts />} />
+          <Route path="jeans" element={<Jeans />} />
+        </Route>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search />} />
+        
+        <Route path="/user" element={<User />}>
+          <Route path=":id" element={<UserDetail />} />
+          <Route path="admin" element={<Admin />} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes> */}
 
-
-<Navbar/>
-<Routes>
-  <Route path="/" element={<Home/>}/>
-  <Route path="/products" element={<Products/>}>
-    <Route path="shirts" element={<Shirts/>}/>
-    <Route path="jeans" element={<Jeans/>}/>
-    </Route>
-  <Route path="/about" element={<About/>}/>
-  <Route path="/contact" element={<Contact/>}/>
-  <Route path="*" element={<PageNotFound/>}/>
-</Routes>
-
-{/* <button onClick={()=>navigate('./about')}>About</button>
+      {/* <button onClick={()=>navigate('./about')}>About</button>
 <button onClick={()=>navigate('./contact')}>Contact</button> */}
-<br />
-<br />
+      {/* <br />
+      <br /> */}
 
-{/* <button onClick={()=> navigate(-1)}>Go Back</button> */}
-
-
-
+      {/* <button onClick={()=> navigate(-1)}>Go Back</button> */}
 
 
 
